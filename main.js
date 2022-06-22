@@ -28,18 +28,18 @@ async function handleInput(e) {
             await moveDown()
             break
         case "ArrowUp":
-            if (!canMoveDown()) {
+            if (!canMoveUp()) {
                 setupInput()
                 return
             }
-            await moveDown()
+            await moveUp()
             break
         case "ArrowRight":
-            if (!canMoveLeft()) {
+            if (!canMoveRight()) {
                 setupInput()
                 return
             }
-            await moveLeft()
+            await moveRight()
             break
         case "ArrowLeft":
             if (!canMoveLeft()) {
